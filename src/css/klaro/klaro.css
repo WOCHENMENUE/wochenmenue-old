@@ -1,0 +1,190 @@
+/* Layout for the Klaro Cookie Consent (https://github.com/KIProtect/klaro) window */
+
+.klaro {
+
+  a, button {
+    @apply underline;
+    @apply font-bold;
+    @apply px-1;
+
+    &:first-child {
+      @apply pl-0;
+    }
+
+    &:last-child {
+      @apply pr-0;
+    }
+  }
+
+  /* Cookie Notice */
+
+  .cookie-notice {
+    @apply z-30;
+    @apply w-full;
+    @apply fixed left-0 bottom-0;
+
+    .cn-body {
+      @apply bg-white;
+      @apply border border-solid border-black;
+      @apply p-3;
+
+      p {
+
+      }
+
+      .cn-ok {
+
+      }
+    }
+  }
+
+
+  /* Cookie Modal */
+
+  .cookie-modal {
+    @apply z-30;
+    @apply w-full h-full;
+    @apply fixed left-0 top-0;
+    @apply overflow-hidden;
+  }
+
+  .cookie-modal {
+
+    .cm-bg {
+      @apply bg-black bg-opacity-50;
+      @apply w-full h-full;
+      @apply fixed top-0 left-0;
+    }
+
+    .cm-modal {
+      @apply z-40;
+      @apply fixed w-full;
+      @apply max-h-full;
+      top: 50%;
+      transform: translateY(-50%);
+      @apply overflow-auto;
+      @apply bg-white;
+      @apply text-black;
+
+      @media (min-width: 1024px){
+        @apply relative;
+        max-height: 98%;
+        margin: 0 auto;
+        max-width: 640px;
+        @apply w-auto h-auto;
+        @apply border border-solid border-black;
+      }
+    }
+
+    .cm-header, .cm-body, .cm-footer {
+      /*@apply px-3;*/
+    }
+
+    .cm-header {
+      @apply mx-3 my-2;
+
+      .hide {
+        @apply absolute;
+        right: 10px;
+        top: 10px;
+
+        svg {
+          stroke: #000;
+        }
+      }
+
+      h1 {
+        @apply text-xl;
+      }
+
+      p {
+
+      }
+
+      a {
+        @apply font-normal;
+      }
+    }
+
+    .cm-body {
+      @apply my-1;
+
+      .cm-apps {
+
+        .cm-app {
+          @apply py-2;
+
+          div {
+            @apply mx-3;
+          }
+
+          .cm-app-input {
+            @apply pl-2;
+          }
+
+          .cm-app-label {
+            @apply ml-2;
+            @apply font-medium;
+          }
+
+          .cm-app-description {
+            @apply p-0;
+          }
+
+          .purposes {
+            @apply text-sm;
+            @apply p-0;
+          }
+        }
+
+        .cm-toggle-all {
+          @apply bg-gray-200;
+        }
+      }
+    }
+
+    .cm-footer {
+      @apply mx-3 mb-3 py-3;
+
+      .cm-footer-buttons {
+
+        .cm-btn-accept {
+
+        }
+
+        .cm-btn-decline {
+
+        }
+      }
+
+      .cm-powered-by {
+        @apply text-xs text-center text-gray-500;
+        @apply mt-2;
+
+        a {
+          @apply font-normal;
+        }
+        /*@apply hidden;*/
+      }
+    }
+  }
+
+  /* Appearance of external content which is hidden if embedded content is not accepted in the cookie settings */
+
+  &.disabled-content {
+    iframe {
+      @apply bg-gray-500; 
+      background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgb(255,255,255) 35px, rgb(255,255,255) 70px);
+    }
+
+    p {
+      @apply font-normal;
+      @apply text-gray-500;
+    }
+
+    a {
+      @apply underline;
+    }
+  }
+
+}

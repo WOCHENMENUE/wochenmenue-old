@@ -1,0 +1,36 @@
+{
+  "name": "kirby3-boilerplate",
+  "version": "1.0.0",
+  "description": "A studio environment to kick start the development of Kirby 3 based on a PostCSS/TailwindCSS- and Gulp-centered workflow.",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build; npm prune --production; rm -r assets/vendor/*; cp -R node_modules/ assets/vendor; npm install;",
+    "unbuild": "gulp unbuild;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenphilipp/kirby3-studio.git"
+  },
+  "author": "Ruben Philipp",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "postcss-url": "^8.0.0",
+    "tailwindcss": "^1.4.6"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "lazysizes": "^5.2.2"
+  }
+}

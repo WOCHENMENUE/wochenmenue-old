@@ -1,0 +1,9 @@
+/* include TailwindCSS and provide custom styles */
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "klaro/klaro";
+
+@import "tailwindcss/utilities";
