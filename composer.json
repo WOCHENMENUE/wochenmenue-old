@@ -1,21 +1,20 @@
 {
-    "name": "getkirby/plainkit",
-    "description": "Kirby Plainkit",
+    "name": "WOCHENMENUE/wochnemenue",
+    "description": "WOCHENMENUE",
     "type": "project",
-    "keywords": ["kirby", "cms", "starterkit"],
-    "homepage": "https://getkirby.com",
+    "keywords": ["kirby", "cms", "starterkit", "newsletter", "culture"],
+    "homepage": "https://wochenmenue.rubylon.com",
     "authors": [
         {
-            "name": "Bastian Allgeier",
-            "email": "bastian@getkirby.com",
-            "homepage": "https://getkirby.com"
+            "name": "Ruben Philipp",
+            "email": "me@rubenphilipp.com",
+            "homepage": "https://rubenphilipp.com"
         }
     ],
     "support": {
-        "email": "support@getkirby.com",
-        "issues": "https://github.com/getkirby/starterkit/issues",
-        "forum": "https://forum.getkirby.com",
-        "source": "https://github.com/getkirby/starterkit"
+        "email": "support@rubenphilipp.com",
+        "issues": "https://github.com/WOCHENMENUE/wochenmenue/issues",
+        "source": "https://github.com/WOCHENMENUE/wochenmenue"
     },
     "require": {
         "php": ">=7.1.0",
