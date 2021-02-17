@@ -27,6 +27,10 @@
     <?= js('assets/js/klaro.config.js') ?>
     <?= js('assets/js/klaro/klaro-no-css.js') ?>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="<?= asset('assets/images/favicon.ico')->url() ?>" type="image/x-icon">
+    <link rel="icon" href="<?= asset('assets/images/favicon.ico')->url() ?>" type="image/x-icon">
+
 
   </head>
 
