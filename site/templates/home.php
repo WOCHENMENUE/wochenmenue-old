@@ -1,4 +1,4 @@
-<?php snippet('header', ['title' => 'WOCHENMENUE'] ) ?>
+<?php snippet('header', ['title' => 'WOCHENMENÜ'] ) ?>
 
 <body>
 
@@ -18,6 +18,13 @@
 			</div>
 		</form>
 	</main>
+
+	<section class="text-center mt-8">
+		<h3 class="font-bold"><?= $page->addEventTitle() ?></h3>
+		<div class="kirbytext">
+			<?= $page->addEventText()->kt() ?>
+		</div>
+	</section>
 
 
 	<?php snippet('section-footer') ?>

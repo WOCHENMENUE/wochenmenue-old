@@ -14,3 +14,18 @@ E-Mail-Adresse
 
 submitLabel:
 Abonnieren
+
+----
+
+addEventTitle:
+Du bist Veranstalter?
+
+----
+
+addEventText:
+
+
+----
+
+addEventButton:
+Veranstaltung eintragen
