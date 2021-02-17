@@ -2,6 +2,15 @@
 
 title: Redakteur
 
+permissions: 
+  access:
+    panel: false
+    site: true
+    settings: false
+    users: false
+  files: false
+
+
 columns:
   - width: 1/2
     fields:
