@@ -1,1 +1,6 @@
-Title: Error
+Title: Fehler
+
+----
+
+text:
+Irgendetwas hat hier nicht funktioniert. Wenn du nicht weiterkommst, schreib uns gerne eine E-Mail: (email:wochenmenue@rubylon.com)
