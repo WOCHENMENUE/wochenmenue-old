@@ -19,7 +19,7 @@ const browserSync = require('browser-sync').create();
 /* Server */
 
 // Server address for local testing (e.g. as provided by Laravel Valet)
-const proxyAddress = 'kirby3-studio.test';
+const proxyAddress = 'wochenmenue.test';
 
 /* File paths */
 

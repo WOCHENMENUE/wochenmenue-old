@@ -14,7 +14,6 @@
 
     <!-- Stylesheets can be included using the `css()` helper. Kirby also provides the `js()` helper to include script file. 
         More Kirby helpers: https://getkirby.com/docs/reference/templates/helpers -->
-    <?php snippet('load-skeleton') ?>
 
     <?= css(['assets/css/main.css', '@auto']) ?>
 

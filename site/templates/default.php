@@ -3,9 +3,9 @@
 <body>
 
 	<h1 class="text-2xl"><?= $page->title() ?></h1>
-	<p>
+	<div>
 		<?= $page->text()->kt() ?>
-	</p>
+	</div>
 
 </body>
 
