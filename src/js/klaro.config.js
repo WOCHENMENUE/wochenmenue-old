@@ -48,7 +48,7 @@ var klaroConfig = {
     // use the value given in the global "lang" variable. If that does
     // not exist, it will use the value given in the "lang" attribute of your
     // HTML tag. If that also doesn't exist, it will use 'en'.
-    //lang: 'de',
+    lang: 'de',
 
     // You can overwrite existing translations and add translations for your
     // app descriptions and purposes. See `src/translations/` for a full
