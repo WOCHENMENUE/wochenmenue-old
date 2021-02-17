@@ -22,10 +22,5 @@ Du bist Veranstalter?
 
 ----
 
-addEventText:
-
-
-----
-
 addEventButton:
 Veranstaltung eintragen

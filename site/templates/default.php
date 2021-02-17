@@ -2,13 +2,10 @@
 
 <body>
 
-	<?php snippet('section-header', ['title' => $page->title()]) ?>
-
-	<main class="mt-8">
+	<h1 class="text-2xl"><?= $page->title() ?></h1>
+	<div>
 		<?= $page->text()->kt() ?>
-	</main>
-
-	<?php snippet('section-footer') ?>
+	</div>
 
 </body>
 
