@@ -2,11 +2,15 @@ Title: WOCHENMENUE
 
 ----
 
-DescriptionShort:
+introtext:
 Ein wöchentlicher Newsletter mit Schlaglichtern auf das subkulturelle Geschehen im Ruhrgebiet. (link: details text: Hä?)
 
 ----
 
-DescriptionLong:
-Connoisseurinnen des dokumentarischen Baustellenballetts wissen im polyzentrischen Rhizomgebilde um Rhein und Ruhr um ihre Loci amoeni in ähnlichem Maße wie auch Liebhaber synkopischer Sektmatineen in Trinkhallenportikus auf ihre Kosten kommen. 
-Das WOCHENMENUE versammelt Orte, Zeiten und Entstehungsbedingungen solcher Biotope und schärft sonntagabendlich den Blick auf das Feuilletonfutter der kommenden sieben Tage.
+emailLabel:
+E-Mail-Adresse
+
+----
+
+submitLabel:
+Abonnieren
