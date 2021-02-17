@@ -2,10 +2,15 @@
 
 <body>
 
-	<h1 class="text-2xl"><?= $page->title() ?></h1>
-	<div>
-		<?= $page->text()->kt() ?>
-	</div>
+	<?php snippet('section-header', ['title' => $page->title()]) ?>
+	
+	<section class="text-center">
+		<div class="max-w-md text-left inline-block mt-8 p-2">
+			<?= $page->text()->kt() ?>
+		</div>
+	</section>
+
+	<?php snippet('section-footer') ?>
 
 </body>
 
