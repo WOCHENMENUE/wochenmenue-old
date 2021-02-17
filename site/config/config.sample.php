@@ -9,4 +9,10 @@
  */
 return [
     'debug' => false,
+    'db' => [
+    	'host' => '127.0.0.1',
+    	'database' => 'wochenmenue',
+    	'user' => 'root',
+    	'password' => 'password',
+    ]
 ];
