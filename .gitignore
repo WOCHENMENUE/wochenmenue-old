@@ -81,3 +81,6 @@ GitHub.sublime-settings
 assets/*
 !assets/vendor
 assets/vendor/*
+
+### Ignore development environment-dependent files ###
+phploy.ini
