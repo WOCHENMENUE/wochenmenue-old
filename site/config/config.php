@@ -9,4 +9,10 @@
  */
 return [
     'debug' => true,
+    'db' => [
+    	'host' => 'localhost:3308',
+    	'database' => 'wochenmenue',
+    	'user' => 'root',
+    	'password' => '',
+    ],
 ];

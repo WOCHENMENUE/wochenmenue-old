@@ -10,9 +10,9 @@
 return [
     'debug' => false,
     'db' => [
-    	'host' => '127.0.0.1',
+    	'host' => '127.0.0.1:8000',
     	'database' => 'wochenmenue',
     	'user' => 'root',
     	'password' => 'password',
-    ]
+    ],
 ];
