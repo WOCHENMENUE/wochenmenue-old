@@ -4,9 +4,9 @@
 
 	<?php snippet('section-header', ['title' => $page->title()]) ?>
 
-	<section>
+	<main class="mt-8">
 		<?= $page->text()->kt() ?>
-	</section>
+	</main>
 
 	<?php snippet('section-footer') ?>
 
