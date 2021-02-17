@@ -1,7 +1,7 @@
 /* WEBSITE TEAM */
 Design and development: Ruben Philipp
 Site: lab.rubenphilipp.com
-Location: Bochum, Germany
+Location: Essen, Germany
 
 /* SITE */
 Standards: HTML5, CSS3, JS

@@ -1,6 +1,7 @@
-# Kirby 3 Development Toolkit
+# WOCHENMENUE (Arbeitstitel)
 
-A studio environment to kick start the development of **Kirby 3** (based on the Kirby 3 Plainkit) based on a PostCSS/TailwindCSS- and Gulp-centered workflow.
+Das WOCHENMENUE versammelt Orte, Zeiten und Entstehungsbedingungen (sub-)kultureller Biotopbildungen und schärft sonntagabendlich den Blick auf das Feuilletonfutter der kommenden sieben Tage.
+Internetportal eines wöchentlichen Kulturveranstaltungsnewsletters.
 
 ## Installation / initialization
 
