@@ -190,10 +190,10 @@ var klaroConfig = {
                 }
             },
         },
-        {
+        /*{
             name: 'googleFonts',
             title: 'Google Fonts',
             purposes: ['styling'],
-        },
+        },*/
     ],
 };
