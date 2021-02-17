@@ -3,7 +3,7 @@ module.exports = {
   theme: {
   	fontFamily: {
   		'sans': ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-  		'serif': ['Garamond', 'Cambria', 'serif'],
+  		'serif': ['Besley', 'Cambria', 'serif'],
   		'mono': ['Courier New', 'Courier', 'Menlo', 'monospace'],
   	},
     screens: {

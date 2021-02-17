@@ -1,5 +1,11 @@
 /* custom layouts for wochenmenue */
 
+/* basic settings */
+
+html {
+	@apply font-serif;
+}
+
 /* grascale */
 
 @variants hover {
