@@ -37,7 +37,8 @@ const srcFiles = {
 	js: 'src/js/**/*.js',
 	images: 'src/images/**/*',
 	fonts: 'src/fonts/**/*',
-	plugins: 'src/plugins/**/*'
+	plugins: 'src/plugins/**/*',
+	controllers: 'src/controllers/**/*'
 }
 
 const destFiles = {
@@ -49,7 +50,8 @@ const destFiles = {
 	images: 'assets/images',
 	fonts: 'assets/fonts',
 	plugins: 'site/plugins',
-	dependencies: 'assets/vendor'
+	dependencies: 'assets/vendor',
+	controllers: 'site/controllers'
 }
 
 /* BrowserSync config */
@@ -126,6 +128,13 @@ function copyDependenciesTask(){
 	return src('node_modules/**/*')
 		.pipe(dest('assets/vendor'))
 }
+
+// Controllers task
+function controllersTask(){
+	return src(srcFiles.controllers)
+		.pipe(dest(destFiles.controllers))
+}
+
 
 // unbuild task
 function unbuildTask(done){

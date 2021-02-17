@@ -19,6 +19,8 @@ npm install
 
 4) Edit the *Klaro* config file (e.g. by renaming `src/js/klaro.config.sample.js` to `src/js/klaro.config.js`) to match the cookie setup for the project. 
 
+5) Modify the Kirby configuration (debug mode, database etc.) according to the environment. Cf. `site/confic/config.php`.
+
 Besides [Kirby 3](https://getkirby.com/), this project is based on the following libraries and tools:
 - TailwindCSS / PostCSS (with gulp-postcss, postcss-import, autoprefixer)
 - [Klaro Consent Manager](https://github.com/KIProtect/klaro)
