@@ -84,3 +84,4 @@ assets/vendor/*
 
 ### Ignore development environment-dependent files ###
 phploy.ini
+gulpfile.js
