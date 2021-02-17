@@ -147,6 +147,7 @@ function unbuildTask(done){
 	del(destFiles.images+'/*');
 	del(destFiles.fonts+'/*');
 	del(destFiles.plugins+'/*');
+	del(destFiles.controllers+'/*');
 	done();
 }
 
@@ -160,6 +161,7 @@ function watchTask(){
 	watch(srcFiles.images, series(imagesTask, reload));
 	watch(srcFiles.fonts, series(fontsTask, reload));
 	watch(srcFiles.plugins, series(pluginsTask, reload));
+	watch(srcFiles.controllers, series(controllersTask, reload));
 }
 
 // define public tasks
@@ -172,6 +174,7 @@ exports.js = jsTask;
 exports.images = imagesTask;
 exports.fonts = fontsTask;
 exports.plugins = pluginsTask;
+exports.controllers = controllersTask;
 
 // Build task (manually build the project)
 exports.build = series(
@@ -184,7 +187,8 @@ exports.build = series(
 		jsTask, 
 		imagesTask, 
 		fontsTask, 
-		pluginsTask
+		pluginsTask,
+		controllersTask
 	);
 
 // Unbuild task
