@@ -13,9 +13,9 @@ It's necessary to have [Node](https://nodejs.org/en/) as well as [Gulp](http://g
 npm install
 ```
 
-2) Make sure to adapt the BrowserSync configuration in `gulpfile.js` to fit the environment's prerequisites.
+2) Rename `gulpfilegulpfile.sample.js`to `gulpfile.js` and make sure to adapt the BrowserSync configuration in `gulpfile.js` and other settings to fit the environment's prerequisites.
 
-3) Edit the *PHPLoy* config file (`phploy.ini`).
+3) Create the *PHPLoy* config file (`phploy.ini`) if you want to use PHPLoy as a deployment tool (you can use `phploy.sample.ini` as a template).
 
 4) Edit the *Klaro* config file (`src/js/klaro.config.js`) to match the cookie setup for the project. 
 
