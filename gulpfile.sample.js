@@ -1,3 +1,9 @@
+/* 
+	this is a sample gulpfile for your development environment. Rename it to gulpfile.js and modify the settings
+	according to your development environment.
+*/
+
+
 const { src, dest, watch, series, parallel } = require('gulp');
 
 const postcss = require('gulp-postcss');
