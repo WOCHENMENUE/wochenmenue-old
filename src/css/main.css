@@ -2,8 +2,12 @@
 
 @import "tailwindcss/base";
 
+@import "wochenmenue/fonts";
+
 @import "tailwindcss/components";
 
 @import "klaro/klaro";
+
+@import "wochenmenue/layout";
 
 @import "tailwindcss/utilities";

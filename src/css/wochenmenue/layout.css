@@ -1,0 +1,13 @@
+/* custom layouts for wochenmenue */
+
+/* grascale */
+
+@variants hover {
+	.grayscale {
+		filter: grayscale(100%);
+	}
+
+	.no-grayscale {
+		filter: grayscale(0%);
+	}
+}
