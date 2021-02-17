@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title><?= $site->title() ?></title>
+    <title><?php if(isset($title)){echo $title;}else{echo $site->title();} ?></title>
 
     <meta name="description" content="<?= $site->description() ?>">
     <meta name="author" content="<?= $site->author() ?>">
