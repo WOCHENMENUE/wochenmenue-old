@@ -17,7 +17,7 @@ npm install
 
 3) Create the *PHPLoy* config file (`phploy.ini`) if you want to use PHPLoy as a deployment tool (you can use `phploy.sample.ini` as a template).
 
-4) Edit the *Klaro* config file (`src/js/klaro.config.js`) to match the cookie setup for the project. 
+4) Edit the *Klaro* config file (e.g. by renaming `src/js/klaro.config.sample.js` to `src/js/klaro.config.js`) to match the cookie setup for the project. 
 
 Besides [Kirby 3](https://getkirby.com/), this project is based on the following libraries and tools:
 - TailwindCSS / PostCSS (with gulp-postcss, postcss-import, autoprefixer)
