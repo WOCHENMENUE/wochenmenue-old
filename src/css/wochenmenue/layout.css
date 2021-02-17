@@ -6,6 +6,14 @@ html {
 	@apply font-serif;
 }
 
+/* kirbytext-layouts */
+
+.kirbytext {
+	a {
+		@apply underline;
+	}
+}
+
 /* grascale */
 
 @variants hover {
