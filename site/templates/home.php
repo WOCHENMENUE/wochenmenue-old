@@ -11,15 +11,68 @@
 	</section>
 
 	<main class="mt-8 mx-2">
-		<form method="post" action="<?= $page->url() ?>">
+
+
+
+		<form method="post" name="subscribeform" id="subscribeform" enctype="multipart/form-data">	
+
 			<div class="max-w-md mx-auto text-center md:text-left md:flex">
-				<input class="w-full border-b border-black text-center md:text-left" type="email" id="email" name="email" value="<?= esc(get('email')) ?>" placeholder="<?= $page->emailLabel() ?>">
-				<input class="md:ml-4 mt-2 md:mt-0 bg-transparent cursor-pointer hover:underline" type="submit" name="submit" value="<?= $page->submitLabel() ?>">
+				<input type="email" class="w-full border-b border-black text-center md:text-left" id="email" name="email" value="" placeholder="<?= $page->emailLabel() ?>">
+
+				<input type="hidden" name="htmlemail" value="<?= $kirby->option('phpListHTMLEmail') ?>">
+				<input type="hidden" name="list[<?= $kirby->option('phpListId') ?>]" value="signup">
+				<input type="hidden" name="subscribe" value="subscribe">
+
+				<button class="md:ml-4 mt-2 md:mt-0 bg-transparent cursor-pointer hover:underline" onclick="if (checkform()) {submitForm();} return false;"><?= $page->submitLabel() ?></button>
 			</div>
 		</form>
-	</main>
 
-	<?= $kirby->option('phpListURL') ?>
+		<div id="formMessages" class="flex justify-center flex-wrap">
+			<div id="subscribeSuccessMessage" class="kirbytext max-w-md text-left italic p-2 text-xs mt-4 hidden">
+				<?= $page->subscribeSuccessMessage()->kt() ?>
+			</div>
+
+			<div id="subscribeFailureMessage" class="kirbytext max-w-md text-left italic p-2 text-xs mt-4 hidden">
+				<?= $page->subscribeFailureMessage()->kt() ?>
+			</div>
+		</div>
+
+		<script type="text/javascript"> 
+
+			<!-- cf. https://www.phplist.org/manual/books/phplist-manual/page/creating-a-subscribe-page#bkmrk-add-an-ajax-subscrib -->
+
+			function checkform() { 
+				re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/; 
+
+				if (!(re.test(jQuery("#email").val()))) { 
+					jQuery("#result").empty().append("Please enter a valid email address"); 
+					jQuery("#email").focus(); 
+					return false; 
+				} 
+				return true; 
+			} 
+
+			function submitForm() { 
+				// hide messages
+				jQuery('#formMessages > div').hide();
+				data = jQuery('#subscribeform').serialize(); 
+				jQuery.ajax({ 
+						type: 'POST', 
+						data: data, 
+						url: '<?= $kirby->option('phpListURL'); ?>', 
+						dataType: 'html'
+					})
+					.done(function(data, status, request){
+						jQuery('#subscribeSuccessMessage').show();
+					})
+					.fail(function(request, status, error){
+						jQuery('#subscribeFailureMessage').show();
+					}); 
+			} 
+
+		</script>
+
+	</main>
 
 	<section class="text-center mt-12">
 		<h3 class="font-bold"><?= $page->addEventTitle() ?></h3>

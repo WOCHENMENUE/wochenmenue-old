@@ -15,5 +15,7 @@ return [
     	'user' => 'root',
     	'password' => '',
     ],
-    'phpListURL' => 'https://beta.wochenmenue.rubylon.com/list1/?p=subscribe&id=1', // The URL to the phpList-subscription form
+    'phpListURL' => 'https://beta.wochenmenue.rubylon.com/list1/?p=asubscribe&id=1', // The URL to the phpList-subscription form (cf. https://www.phplist.org/manual/books/phplist-manual/page/creating-a-subscribe-page#bkmrk-add-an-ajax-subscrib)
+    'phpListHTMLEmail' => 1, // set the standard value for the subscription form
+    'phpListId' => 3, // ID of the List to add new subscribers to
 ];

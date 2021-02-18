@@ -17,8 +17,20 @@ Abonnieren
 
 ----
 
+subscribeSuccessMessage:
+**Ausgezeichnet!** 
+Du gehörst nun fast zum erlauchten Kreise der WOCHENMENÜ-Leser:innen. Der letzte Akt der Initiation besteht im Öffnen des Bestätigungslinks, welcher in Kürze als hors d'œuvre dein Postfach erreichen sollte.
+
+----
+
+subscribeFailureMessage:
+**Komisch…**
+Irgendetwas hat nicht geklappt. Vielleicht probierst du es noch einmal (möglicherweise hast du dich ja bei deiner E-Mail-Adresse vertippt oder unser Server hat ein Nickerchen gemacht). Sollte der Fehler erneut auftreten, würden wir uns über eine kleine Notiz per (email: wochenmenue@rubylon.com text:E-Mail) freuen.
+
+----
+
 addEventTitle:
-Du bist Veranstalter?
+Du bist Veranstalter:in?
 
 ----
 
