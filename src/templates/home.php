@@ -32,8 +32,16 @@
 				<?= $page->subscribeSuccessMessage()->kt() ?>
 			</div>
 
+			<div id="subscribeInvalidMailMessage" class="kirbytext max-w-md text-left italic p-2 text-xs mt-4 hidden">
+				<?= $page->subscribeInvalidMailMessage()->kt() ?>
+			</div>
+
 			<div id="subscribeFailureMessage" class="kirbytext max-w-md text-left italic p-2 text-xs mt-4 hidden">
 				<?= $page->subscribeFailureMessage()->kt() ?>
+			</div>
+
+			<div id="loader" class="kirbytext max-w-md text-center italic p-2 text-xs mt-4 hidden">
+				<?= $page->loaderText() ?>
 			</div>
 		</div>
 
@@ -42,10 +50,13 @@
 			<!-- cf. https://www.phplist.org/manual/books/phplist-manual/page/creating-a-subscribe-page#bkmrk-add-an-ajax-subscrib -->
 
 			function checkform() { 
+				// hide messages
+				jQuery('#formMessages > div').hide();
+
 				re = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/; 
 
 				if (!(re.test(jQuery("#email").val()))) { 
-					jQuery("#result").empty().append("Please enter a valid email address"); 
+					jQuery('#subscribeInvalidMailMessage').show();
 					jQuery("#email").focus(); 
 					return false; 
 				} 
@@ -55,6 +66,10 @@
 			function submitForm() { 
 				// hide messages
 				jQuery('#formMessages > div').hide();
+
+				// show loader
+				jQuery('#loader').show();
+
 				data = jQuery('#subscribeform').serialize(); 
 				jQuery.ajax({ 
 						type: 'POST', 
@@ -63,11 +78,15 @@
 						dataType: 'html'
 					})
 					.done(function(data, status, request){
+						// hide loader
+						jQuery('#loader').hide();
 						jQuery('#subscribeSuccessMessage').show();
 					})
 					.fail(function(request, status, error){
+						// hide loader
+						jQuery('#loader').hide();
 						jQuery('#subscribeFailureMessage').show();
-					}); 
+					});
 			} 
 
 		</script>

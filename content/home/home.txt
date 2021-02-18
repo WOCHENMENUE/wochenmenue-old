@@ -17,9 +17,20 @@ Abonnieren
 
 ----
 
+loaderText:
+Einen Moment bitte…
+
+----
+
 subscribeSuccessMessage:
 **Ausgezeichnet!** 
 Du gehörst nun fast zum erlauchten Kreise der WOCHENMENÜ-Leser:innen. Der letzte Akt der Initiation besteht im Öffnen des Bestätigungslinks, welcher in Kürze als hors d'œuvre dein Postfach erreichen sollte.
+
+----
+
+subscribeInvalidMailMessage:
+**Vertippt?**
+Bitte gib eine gültige E-Mail-Adresse ein.
 
 ----
 
