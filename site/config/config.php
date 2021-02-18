@@ -15,4 +15,5 @@ return [
     	'user' => 'root',
     	'password' => '',
     ],
+    'phpListURL' => 'https://beta.wochenmenue.rubylon.com/list1/?p=subscribe&id=1', // The URL to the phpList-subscription form
 ];

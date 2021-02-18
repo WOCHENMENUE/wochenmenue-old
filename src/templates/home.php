@@ -19,6 +19,8 @@
 		</form>
 	</main>
 
+	<?= $kirby->option('phpListURL') ?>
+
 	<section class="text-center mt-12">
 		<h3 class="font-bold"><?= $page->addEventTitle() ?></h3>
 		<div class="max-w-md inline-block">
