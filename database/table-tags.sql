@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS tags (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    created_at DATE,
+    due_date TIMESTAMP
+)  ENGINE=INNODB;
