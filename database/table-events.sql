@@ -6,9 +6,12 @@ CREATE TABLE IF NOT EXISTS events (
     event_time TIME NOT NULL,
     event_description TEXT,
     event_url MEDIUMTEXT,
-    event_location INT NOT NULL COMMENT 'links to locations table',
+    location_name VARCHAR(255) NOT NULL,
+    location_city VARCHAR(255) NOT NULL,
+    location_description MEDIUMTEXT,
     sender_name VARCHAR(255) NOT NULL,
     sender_mail MEDIUMTEXT NOT NULL,
     sender_comments MEDIUMTEXT,
-    created_at DATE
+    created_at DATE,
+    due_date TIMESTAMP
 )  ENGINE=INNODB;

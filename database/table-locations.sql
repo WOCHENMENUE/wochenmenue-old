@@ -4,5 +4,7 @@ CREATE TABLE IF NOT EXISTS locations (
     location_city VARCHAR(255) NOT NULL,
     location_url MEDIUMTEXT,
     location_description MEDIUMTEXT,
+    location_contact_name VARCHAR(255),
+    location_contact_mail MEDIUMTEXT,
     created_at DATE
 )  ENGINE=INNODB;
