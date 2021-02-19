@@ -3,3 +3,5 @@ Veranstaltung eintragen
 
 ----
 
+text:
+Gerne nehmen wir deine Veranstaltung ins WOCHENMENÜ auf. Fülle einfach das folgende Formular aus. Wir kümmern uns um den Rest…

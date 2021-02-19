@@ -96,7 +96,7 @@
 	<section class="text-center mt-12">
 		<h3 class="font-bold"><?= $page->addEventTitle() ?></h3>
 		<div class="max-w-md inline-block">
-			<a href="https://forms.gle/nmQaa9m8MdkRUUq37" target="_blank" title="<?= $page->addEventButton() ?>" class="underline"><?= $page->addEventButton() ?></a>
+			<a href="<?= $page->addEventPage()->url() ?>" title="<?= $page->addEventButton() ?>" class="underline"><?= $page->addEventButton() ?></a>
 		</div>
 	</section>
 

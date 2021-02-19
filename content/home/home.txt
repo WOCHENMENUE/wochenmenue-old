@@ -47,3 +47,8 @@ Du bist Veranstalter:in?
 
 addEventButton:
 Veranstaltung eintragen
+
+----
+
+addEventPage:
+veranstaltung-eintragen
