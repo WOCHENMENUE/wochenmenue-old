@@ -1,4 +1,4 @@
-** Diese Version des Wochenmenüs befindet sich nicht mehr in Entwicklung. Die aktuelle Version ist hier zu finden: [WOCHENMENUE/wochenmenue](https://github.com/WOCHENMENUE/wochenmenue) **
+> Diese Version des Wochenmenüs befindet sich nicht mehr in Entwicklung. Die aktuelle Version ist hier zu finden: [WOCHENMENUE/wochenmenue](https://github.com/WOCHENMENUE/wochenmenue)
 
 # WOCHENMENUE (Arbeitstitel)
 
