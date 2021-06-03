@@ -1,3 +1,5 @@
+** Diese Version des Wochenmenüs befindet sich nicht mehr in Entwicklung. Die aktuelle Version ist hier zu finden:[WOCHENMENUE/wochenmenue](https://github.com/WOCHENMENUE/wochenmenue) **
+
 # WOCHENMENUE (Arbeitstitel)
 
 Das WOCHENMENUE versammelt Orte, Zeiten und Entstehungsbedingungen (sub-)kultureller Biotopbildungen und schärft sonntagabendlich den Blick auf das Feuilletonfutter der kommenden sieben Tage.
